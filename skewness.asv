@@ -1,0 +1,5 @@
+function [s]= skewness(data)
+
+s=1/((length(data)-1)*std(data)^3)*sum((data-mean(data)*ones(,1)')^3)
+
+end
